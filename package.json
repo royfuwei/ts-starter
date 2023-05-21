@@ -12,7 +12,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "keywords": [],
-  "author": "",
+  "author": "royfuwei",
   "license": "ISC",
   "devDependencies": {
     "@types/dotenv-flow": "^3.2.0",
