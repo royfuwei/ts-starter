@@ -46,7 +46,7 @@
     "transform": {
       "^.+\\.(ts|tsx)$": "ts-jest"
     },
-    "testRegex": "(/src/.*\\.spec)\\.(ts|js)",
+    "testRegex": "(/(src|test)/.*\\.spec)\\.(ts|js)",
     "testEnvironment": "node"
   }
 }
