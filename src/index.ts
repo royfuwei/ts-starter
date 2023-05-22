@@ -1,4 +1,4 @@
 import './preboot';
-import configs from "./configs";
+import configs from './configs';
 
-console.log(`environment: ${configs.environment}`)
+console.log(`environment: ${configs.environment}`);
