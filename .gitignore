@@ -8,3 +8,4 @@ temp/
 dist
 .env.local
 README.dev.md
+*.tgz
