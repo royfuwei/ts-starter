@@ -1,4 +1,3 @@
-/* eslint-disable */
 import * as dotenvFlow from 'dotenv-flow';
 const envFlow = dotenvFlow.config();
 
