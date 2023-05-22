@@ -8,8 +8,8 @@
     "start": "npm run build && node dist/index.js",
     "start:dev": "npx nodemon",
     "build": "rimraf ./dist && tsc --build ./tsconfig.build.json",
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "test": "jest --config jestconfig.json",
+    "test:watch": "jest --config jestconfig.json --watch",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "local:pack": "npm run build && npm pack",
     "version:dev": "npm version prerelease --preid=dev",
@@ -51,25 +51,5 @@
   "dependencies": {
     "dotenv-flow": "^3.2.0",
     "env-var": "^7.3.1"
-  },
-  "jest": {
-    "globals": {
-      "ts-jest": {
-        "tsconfig": "tsconfig.json"
-      }
-    },
-    "moduleFileExtensions": [
-      "ts",
-      "js"
-    ],
-    "moduleDirectories": [
-      "node_modules",
-      "<rootDir>"
-    ],
-    "transform": {
-      "^.+\\.(ts|tsx)$": "ts-jest"
-    },
-    "testRegex": "(/(src|test)/.*\\.spec)\\.(ts|js)",
-    "testEnvironment": "node"
   }
 }
