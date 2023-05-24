@@ -18,6 +18,9 @@
     "lint:fix": "npx eslint \"{src,test}/**/*.ts\" --fix --max-warnings=0",
     "prepare": "npx husky install"
   },
+  "_moduleAliases": {
+    "@": "./dist"
+  },
   "lint-staged": {
     "*.ts": [
       "npx eslint --fix"
@@ -47,10 +50,12 @@
     "rimraf": "^5.0.1",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.0.4"
   },
   "dependencies": {
     "dotenv-flow": "^3.2.0",
-    "env-var": "^7.3.1"
+    "env-var": "^7.3.1",
+    "module-alias": "^2.2.2"
   }
 }
